@@ -24,10 +24,10 @@ const postsUserDataContainsQueryString = (
 const PostFeed = ({ propsMessage }: { propsMessage: string }) => {
   console.log(propsMessage + "PostFeed");
   const history = useHistory();
-  const { posts, loadAllPosts } = usePostsContext();
+  const { posts } = usePostsContext();
 
   useEffect(() => {
-    loadAllPosts();
+    posts.load();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

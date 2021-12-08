@@ -8,10 +8,10 @@ import { usePostsContext } from "contexts/PostsContext";
 const ViewingPost = ({ propsMessage }: { propsMessage: string }) => {
   console.log(propsMessage + "ViewingPost");
   const params = useParams<{ postId: string }>();
-  const { viewingPost, loadPost } = usePostsContext();
+  const { viewingPost } = usePostsContext();
 
   useEffect(() => {
-    loadPost(params.postId);
+    viewingPost.load(params.postId);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
