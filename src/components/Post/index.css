@@ -1,0 +1,22 @@
+.post {
+  cursor: pointer;
+  background-color: #c55b3a;
+  color: #1e1e1e;
+  padding: 0.3rem;
+  box-shadow: 2px 1px 3px black;
+  border-radius: 2px;
+  transform: translateX(2px);
+  width: 80%;
+  transition: transform 0.1s ease-in, box-shadow 0.2s, background-color 0.2s;
+  margin: 0 auto 1rem;
+}
+
+.post:not(.expanded):hover {
+  transform: translateX(0px);
+  background-color: #cf613f;
+  box-shadow: 3px 2px 4px #2c2c2c;
+}
+
+.post.expanded {
+  cursor: default;
+}

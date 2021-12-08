@@ -1,0 +1,30 @@
+body {
+  background-color: #391b9f;
+  color: #e7e7e7;
+  min-height: 100vh;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: white;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: #1e6ec8;
+  border-radius: 3px;
+  padding: 5px;
+  box-shadow: 1px 1px 0px black;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #3379c9;
+}

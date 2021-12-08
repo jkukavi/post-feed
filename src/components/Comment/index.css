@@ -1,0 +1,13 @@
+.comment {
+  pointer-events: none;
+  cursor: default;
+  background-color: #9e9e9e;
+  color: #1e1e1e;
+  padding: 0.3rem;
+  box-shadow: 2px 1px 3px black;
+  border-radius: 2px;
+  transform: translateX(4px);
+  width: 80%;
+  transition: transform 0.1s ease-in;
+  margin: 0 auto 1rem;
+}
